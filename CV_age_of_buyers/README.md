@@ -30,7 +30,7 @@
 ## 🧠 Модель
 
 ```python
-ResNet50(include_top=False) → GlobalAveragePooling2D() → Dense(1)
+ResNet50(weights='imagenet', include_top=False) → GlobalAveragePooling2D() → Dense(1)
 
 - Backbone: Предобученная ResNet50
 - Pooling: Global Average Pooling

@@ -29,9 +29,12 @@
 
 ## 🧠 Модель
 
-    ResNet50 (предобученная) + GlobalAveragePooling
+```python
+ResNet50(include_top=False) → GlobalAveragePooling2D() → Dense(1)
 
-    Полносвязный слой (1 нейрон)
+- Backbone: Предобученная ResNet50
+- Pooling: Global Average Pooling
+- Выход: Полносвязный слой с 1 нейроном
 
 ## 📊 Результаты обучения
 

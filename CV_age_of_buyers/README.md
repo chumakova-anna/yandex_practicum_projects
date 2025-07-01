@@ -31,6 +31,7 @@
 
 ```python
 ResNet50(weights='imagenet', include_top=False) → GlobalAveragePooling2D() → Dense(1)
+```
 
 - Backbone: Предобученная ResNet50
 - Pooling: Global Average Pooling
@@ -50,3 +51,5 @@ ResNet50(weights='imagenet', include_top=False) → GlobalAveragePooling2D() →
 - 🖼️ Добавить аугментации:
 ```python
 ImageDataGenerator(rotation_range=30, brightness_range=[0.7,1.3])
+
+
